@@ -1,6 +1,6 @@
 <template>
   <container>
-    <input-form></input-form>
+    <input>
   </container>
 </template>
 
