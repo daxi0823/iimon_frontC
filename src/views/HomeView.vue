@@ -1,11 +1,17 @@
 <template>
   <container>
     <input>
+
+    <div class="buttonWrapper">
+      <div>
+        <button class="buttonX">x</button>
+        
+      </div>
+    </div>
   </container>
 </template>
 
 <script>
-import InputForm from '@/bk/InputForm.vue'
 export default {
   components: { InputForm },
   
