@@ -1,5 +1,5 @@
 <template>
-  <container>
+  <div>
     <input>
 
     <div class="buttonWrapper">
@@ -8,7 +8,7 @@
 
       </div>
     </div>
-  </container>
+  </div>
 </template>
 
 <script>
