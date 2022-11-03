@@ -1,15 +1,6 @@
 <template>
   <v-app class="container">
-    <v-toolbar color="indigo" dark width="375" height="56" class="flex-grow-0 toolbar">
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
-      <v-toolbar-title>Discovery</v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-btn icon>
-        <v-icon>mdi-magnify</v-icon>
-      </v-btn>
-    </v-toolbar>
-    <!-- <LogInComp /> -->
-    <router-view />
+    <router-view/>
   </v-app>
 </template>
 
@@ -20,10 +11,6 @@ export default {
 
   data: () => ({
   }),
-  // mounted() {
-  //   this.$store.commit("getSpots")
-  //   this.$store.commit("getPlans")
-  // },
   components: {
   }
 };
@@ -35,16 +22,8 @@ export default {
 =========================*/
 .container {
   padding: 0;
-}
-
-.toolbar {
   margin: 0 auto;
 }
-
-/*=========================
-  Google fonts
-=========================*/
-@import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap');
 
 
 /*=========================
