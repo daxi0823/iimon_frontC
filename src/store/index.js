@@ -1,26 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import axios from 'axios'
-import { db, storage } from "@/firebase/firebase";
-import {
-  collection,
-  addDoc,
-  serverTimestamp,
-  onSnapshot,
-  query,
-  orderBy,
-  where,
-  deleteDoc,
-  getDocs,
-  doc,
-} from "firebase/firestore";
-import {
-  getDownloadURL,
-  ref,
-  uploadBytesResumable,
-  deleteObject,
-} from "firebase/storage";
-
 Vue.use(Vuex)
 
 
