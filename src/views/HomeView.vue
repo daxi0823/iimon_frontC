@@ -4,7 +4,7 @@
     <input type="button" class="submitButton">
 
     <div class="buttonWrapper">
-      <div>
+      <div class="buttonContainer">
         <button class="buttonX">x</button>
         <p class="choices">Apple</p>
       </div>
@@ -26,15 +26,21 @@ export default {
 }
 
 .textSpace {
+  box-sizing: border-box;
   height: 30px;
   border: 1px solid navy;
 }
 .submitButton {
+  box-sizing: border-box;
   height: 30px;
   background-color: navy;
   color: white;
 }
 
+.buttonContainer {
+  height: 50px;
+
+}
 .buttonX {
   box-sizing: border-box;
   height: 50px;
