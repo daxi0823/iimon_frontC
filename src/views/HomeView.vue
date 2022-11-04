@@ -6,7 +6,7 @@
     <div class="buttonWrapper">
       <div class="buttonContainer">
         <button class="buttonX">x</button>
-        <p class="choices">Apple</p>
+        <div class="choices">Apple</div>
       </div>
     </div>
   </div>
