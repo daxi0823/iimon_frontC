@@ -20,7 +20,8 @@ export default {
 <style scoped>
 .buttonWrapper {
   width: 300px;
-
+  margin: 0 auto;
+  
 }
 
 .buttonX {
