@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <input>
+  <div class="mainWrapper">
+    <input type="text" class="textSpace">
+    <input type="button" class="submitButton">
 
     <div class="buttonWrapper">
       <div>
@@ -18,10 +19,20 @@ export default {
 </script>
 
 <style scoped>
-.buttonWrapper {
+.mainWrapper {
   width: 300px;
   margin: 0 auto;
-  
+
+}
+
+.textSpace {
+  height: 30px;
+  border: 1px solid navy;
+}
+.submitButton {
+  height: 30px;
+  background-color: navy;
+  color: white;
 }
 
 .buttonX {
