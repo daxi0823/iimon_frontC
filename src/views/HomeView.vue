@@ -1,12 +1,21 @@
 <template>
   <div class="mainWrapper">
     <input type="text" class="textSpace">
-    <input type="button" class="submitButton">
+    <input type="button" class="submitButton" value="追加">
 
     <div class="buttonWrapper">
       <div class="buttonContainer">
         <button class="buttonX">x</button>
-        <div class="choices">Apple</div>
+        <div class="choices">
+          <span>Apple</span>
+        </div>
+      </div>
+
+            <div class="buttonContainer">
+        <button class="buttonX">x</button>
+        <div class="choices">
+          <span>Grape</span>
+        </div>
       </div>
     </div>
   </div>
