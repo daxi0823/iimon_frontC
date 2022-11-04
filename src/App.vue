@@ -22,7 +22,7 @@ export default {
 =========================*/
 .container {
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
 }
 
 
