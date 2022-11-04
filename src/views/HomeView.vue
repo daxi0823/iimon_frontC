@@ -18,14 +18,22 @@ export default {
 </script>
 
 <style scoped>
+.buttonWrapper {
+  width: 300px;
+
+}
+
 .buttonX {
+  box-sizing: border-box;
   height: 50px;
   width: 50px;
-
+  border: 1px solid navy;
 }
 .choices {
   display: inline-block;
+  box-sizing: border-box;
   height: 50px;
   width: 250px;
+  border: 1px solid navy;
 }
 </style>
