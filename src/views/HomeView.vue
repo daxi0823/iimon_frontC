@@ -30,6 +30,7 @@ export default {
   methods: {
     addItem() {
       this.items.push(this.newItem);
+      this.newItem = "";
       console.log(this.items)
     },
     deleteItem(index){
