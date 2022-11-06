@@ -1,12 +1,12 @@
 <template>
   <div class="mainWrapper">
-    <!-- 追加用input部分 -->
+    <!-- input部分 -->
     <div class="inputWrapper">
       <input type="text" class="inputBox">
       <input type="button" class="submitButton" value="追加">
     </div>
 
-    <!-- 表示用item部分 -->
+    <!-- item部分 -->
     <div class="itemWrapper" v-for="(item, index) in items" :key=index >
       <div class="itemContainer">
         <button class="buttonX">X</button>
@@ -33,18 +33,18 @@ export default {
   width: 300px;
   margin: 100px auto;
 }
-
+/* input部分 */
 .inputWrapper{
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
 }
-
 .inputBox {
   box-sizing: border-box;
   height: 30px;
   border: 1px solid navy;
+  width: 100%;
 }
 .submitButton {
   box-sizing: border-box;
@@ -53,7 +53,7 @@ export default {
   background-color: navy;
   color: white;
 }
-
+/* item部分 */
 .itemContainer {
   display: flex;
   align-items: center;
