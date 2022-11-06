@@ -1,4 +1,4 @@
-# datingtest02
+# front B 課題
 
 ## Project setup
 ```
