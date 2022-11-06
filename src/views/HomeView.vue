@@ -38,7 +38,7 @@ export default {
         id: this.currentId,
         name: this.inputName,
       });
-      currentId++
+      this.currentId++
     },
     deleteItem(id){
       this.items.splice(this.id, 1);
