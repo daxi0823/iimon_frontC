@@ -7,11 +7,11 @@
     </div>
 
     <!-- item部分 -->
-    <div class="itemWrapper" v-for="(item, id) in items" :key=id >
+    <div class="itemWrapper" v-for="(item, index) in items" :key=index >
       <div class="itemContainer">
-        <button class="buttonX" @click="deleteItem(deleteId)">X</button>
+        <button class="buttonX" @click="deleteItem(index)">X</button>
         <div class="items">
-          <span class="itemFont">{{item.name}}</span>
+          <span class="itemFont">{{item}}</span>
         </div>
       </div>
     </div>
@@ -24,25 +24,16 @@ export default {
   data(){
     return {
       inputName: "",
-      items:[
-        {id: 1, name: "Apple"},
-        {id: 2, name: "Grape"},
-        {id: 3, name: "Strawberry"},
-      ],
-      currentId: 4,
+      items:["Apple", "Grape", "Strawberry"],
     }
   },
   methods: {
     addItem() {
-      this.items.push({
-        id: this.currentId,
-        name: this.inputName,
-      });
-      this.currentId++
+      this.items.push(inputName);
       console.log(this.items)
     },
     deleteItem(deleteId){
-      this.items.splice(this.id, 1);
+      this.items.splice(index, 1);
       console.log(this.items)
     }
   }
