@@ -22,7 +22,7 @@
 export default {  
   data(){
     return{
-      items:[Apple, Grape, Strawberry],
+      items:["Apple", "Grape", "Strawberry"],
     }
   },
 }
