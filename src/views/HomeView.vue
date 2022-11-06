@@ -9,7 +9,7 @@
     <!-- item部分 -->
     <div class="itemWrapper" v-for="(item, id) in items" :key=id >
       <div class="itemContainer">
-        <button class="buttonX" @click="deleteItem(item.id)">X</button>
+        <button class="buttonX" @click="deleteItem(deleteId)">X</button>
         <div class="items">
           <span class="itemFont">{{item.name}}</span>
         </div>
@@ -41,7 +41,7 @@ export default {
       this.currentId++
       console.log(this.items)
     },
-    deleteItem(id){
+    deleteItem(deleteId){
       this.items.splice(this.id, 1);
       console.log(this.items)
     }
