@@ -23,6 +23,7 @@
 export default {  
   data(){
     return {
+      inputName: "",
       items:[
         {id: 1, name: "Apple"},
         {id: 2, name: "Grape"},
