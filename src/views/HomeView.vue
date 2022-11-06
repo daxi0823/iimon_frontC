@@ -2,29 +2,47 @@
   <div class="mainWrapper">
     <!-- input部分 -->
     <div class="inputWrapper">
-      <input type="text" class="inputBox">
-      <input type="button" class="submitButton" value="追加">
+      <input type="text" class="inputBox" v-model="inputName">
+      <input type="button" class="submitButton" @click="addItem" value="追加">
     </div>
 
     <!-- item部分 -->
-    <div class="itemWrapper" v-for="(item, index) in items" :key=index >
+    <div class="itemWrapper" v-for="(item, id) in items" :key=id >
       <div class="itemContainer">
-        <button class="buttonX">X</button>
+        <button class="buttonX" @click="deleteItem(item.id)">X</button>
         <div class="items">
-          <span class="itemFont">{{item}}</span>
+          <span class="itemFont">{{item.name}}</span>
         </div>
       </div>
     </div>
+    <!-- "Apple", "Grape", "Strawberry" -->
   </div>
 </template>
 
 <script>
 export default {  
   data(){
-    return{
-      items:["Apple", "Grape", "Strawberry"],
+    return {
+      items:[
+        {id: 1, name: "Apple"},
+        {id: 2, name: "Grape"},
+        {id: 3, name: "Strawberry"},
+      ],
+      currentId: 4,
     }
   },
+  methods: {
+    addItem() {
+      this.items.push({
+        id: this.currentId,
+        name: this.inputName,
+      });
+      currentId++
+    },
+    deleteItem(id){
+      this.items.splice(this.id, 1);
+    }
+  }
 }
 </script>
 
