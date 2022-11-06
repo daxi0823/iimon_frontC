@@ -2,7 +2,7 @@
   <div class="mainWrapper">
     <!-- input部分 -->
     <div class="inputWrapper">
-      <input type="text" class="inputBox" v-model="inputName">
+      <input type="text" class="inputBox" v-model="newItem">
       <input type="button" class="submitButton" @click="addItem" value="追加">
     </div>
 
@@ -23,13 +23,13 @@
 export default {  
   data(){
     return {
-      inputName: "",
+      newItem: "",
       items:["Apple", "Grape", "Strawberry"],
     }
   },
   methods: {
     addItem() {
-      this.items.push(inputName);
+      this.items.push(this.newItem);
       console.log(this.items)
     },
     deleteItem(index){
