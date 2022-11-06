@@ -44,7 +44,8 @@ export default {
   box-sizing: border-box;
   height: 30px;
   border: 1px solid navy;
-  width: 95%;
+  margin-right: 5px;
+  width: 100%;
 }
 .submitButton {
   box-sizing: border-box;
