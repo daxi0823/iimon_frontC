@@ -32,7 +32,7 @@ export default {
       this.items.push(inputName);
       console.log(this.items)
     },
-    deleteItem(deleteId){
+    deleteItem(index){
       this.items.splice(index, 1);
       console.log(this.items)
     }
