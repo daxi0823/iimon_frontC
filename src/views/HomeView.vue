@@ -15,7 +15,6 @@
         </div>
       </div>
     </div>
-    <!-- "Apple", "Grape", "Strawberry" -->
   </div>
 </template>
 
