@@ -1,29 +1,30 @@
 <template>
   <div class="mainWrapper">
+
+  <div class="inputWrapper">
     <input type="text" class="textSpace">
     <input type="button" class="submitButton" value="追加">
+  </div>
 
-    <div class="buttonWrapper">
-      <div class="buttonContainer">
-        <button class="buttonX">x</button>
-        <div class="choices">
-          <span>Apple</span>
+    <div class="itemWrapper" v-for="(item, index) in items" :key=index >
+      <div class="itemContainer">
+        <button class="buttonX itemFont ">X</button>
+        <div class="items">
+          <span class="choiceFont">{{item}}</span>
         </div>
       </div>
 
-            <div class="buttonContainer">
-        <button class="buttonX">x</button>
-        <div class="choices">
-          <span>Grape</span>
-        </div>
-      </div>
     </div>
   </div>
 </template>
 
 <script>
 export default {  
-  
+  data(){
+    return{
+      items:[Apple, Grape, Strawberry],
+    }
+  },
 }
 </script>
 
@@ -31,7 +32,10 @@ export default {
 .mainWrapper {
   width: 300px;
   margin: 0 auto;
-
+}
+.inputWrapper{
+  display: flex;
+  margin-bottom: 20px;
 }
 
 .textSpace {
@@ -46,21 +50,30 @@ export default {
   color: white;
 }
 
-.buttonContainer {
+.itemContainer {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
   height: 50px;
+  border: 1px solid navy;
+  margin-bottom: 3px;
 
 }
 .buttonX {
   box-sizing: border-box;
   height: 50px;
   width: 50px;
-  border: 1px solid navy;
+  border-right: 1px solid navy;
+  background-color: navy;
+  color: white;
 }
-.choices {
+.items {
   display: inline-block;
   box-sizing: border-box;
-  height: 50px;
   width: 250px;
-  border: 1px solid navy;
+}
+.itemFont {
+  font-size: 16px;
+  padding-left: 20px;
 }
 </style>
