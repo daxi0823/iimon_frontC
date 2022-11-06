@@ -38,13 +38,13 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .inputBox {
   box-sizing: border-box;
   height: 30px;
   border: 1px solid navy;
-  margin-right: 20px;
+  margin-right: 10px;
   width: 100%;
 }
 .submitButton {
