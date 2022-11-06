@@ -1,19 +1,19 @@
 <template>
   <div class="mainWrapper">
+    <!-- 追加用input部分 -->
+    <div class="inputWrapper">
+      <input type="text" class="inputBox">
+      <input type="button" class="submitButton" value="追加">
+    </div>
 
-  <div class="inputWrapper">
-    <input type="text" class="textSpace">
-    <input type="button" class="submitButton" value="追加">
-  </div>
-
+    <!-- 表示用item部分 -->
     <div class="itemWrapper" v-for="(item, index) in items" :key=index >
       <div class="itemContainer">
-        <button class="buttonX itemFont ">X</button>
+        <button class="buttonX">X</button>
         <div class="items">
-          <span class="choiceFont">{{item}}</span>
+          <span class="itemFont">{{item}}</span>
         </div>
       </div>
-
     </div>
   </div>
 </template>
@@ -33,12 +33,14 @@ export default {
   width: 300px;
   margin: 0 auto;
 }
+
 .inputWrapper{
   display: flex;
+  align-items: center;
   margin-bottom: 20px;
 }
 
-.textSpace {
+.inputBox {
   box-sizing: border-box;
   height: 30px;
   border: 1px solid navy;
@@ -57,7 +59,6 @@ export default {
   height: 50px;
   border: 1px solid navy;
   margin-bottom: 3px;
-
 }
 .buttonX {
   box-sizing: border-box;
