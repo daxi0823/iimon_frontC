@@ -38,7 +38,7 @@ export default {
 
 }
 /* input部分 */
-.leftBox .rightBox{
+.leftBox, .rightBox{
   box-sizing: border-box;
   width: 300px;
   border: 1px solid navy;
