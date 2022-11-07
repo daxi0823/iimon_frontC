@@ -4,7 +4,6 @@
       <div class="leftBox">
         <leftItems/>
       </div>
-      <input type="button" class="submitButton" @click="transferToRight" value="右へ移動">
     </div>
 
     <div class="rightBox">
@@ -26,14 +25,10 @@ export default {
     }
   },
   methods: {
-    transferToRight() {
-      const lastItem = leftItems.slice(-1)[0];
-      console.log(lastItem);
-    }
   },
   components: {
-    leftItems,
-    rightItems,
+    leftItemList,
+    rightItemList,
   }
 }
 </script>

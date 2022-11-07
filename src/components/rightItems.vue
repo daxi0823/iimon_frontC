@@ -1,6 +1,6 @@
 <template>
   <div class="contentBox">
-    <div v-for="(item, index) in rightItems" :key="index">
+    <div v-for="(item, index) in rightItemList" :key="index">
       {{item.name}}
     </div>
   </div>
@@ -17,8 +17,8 @@ export default {
 
   },
   computed: {
-    rightItems() {
-      return this.$store.getters.rightItems;
+    rightItemList() {
+      return this.$store.getters.rightItemList;
     },
   }
 }

@@ -5,6 +5,9 @@
         {{item.name}}
       </li>
     </ul>
+    <!-- ボタン -->
+    <input type="button" class="submitButton" @click="transferToRight" value="右へ移動">
+    
   </div>
 </template>
 
@@ -16,11 +19,11 @@ export default {
     }
   },
   methods: {
-
+    
   },
   computed: {
-    leftItems() {
-      return this.$store.getters.leftItems;
+    leftItemList() {
+      return this.$store.getters.leftItemList;
     },
   }
 }

@@ -5,7 +5,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    allItems: [
+    allItemList: [
       {name: "Apple", position:"left"},
       {name: "Grape", position:"left"},
       {name: "Strawberry", position:"left"},
@@ -17,11 +17,11 @@ export default new Vuex.Store({
     ],
   },
   getters: {
-    leftItems: function(state){
-      return state.allItems.filter(item => item.position == "left");
+    leftItemlist: function(state){
+      return state.allItemList.filter(item => item.position == "left");
     },
-    rightItems: function(state){
-      return state.allItems.filter(item => item.position == "right");
+    rightItemlist: function(state){
+      return state.allItemList.filter(item => item.position == "right");
     },
   },
   mutations: {
