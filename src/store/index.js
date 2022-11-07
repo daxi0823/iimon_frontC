@@ -18,10 +18,10 @@ export default new Vuex.Store({
   },
   getters: {
     leftItems: function(state){
-      return state.allItems.filter(item => item.position == left);
+      return state.allItems.filter(item => item.position == "left");
     },
     rightItems: function(state){
-      return state.allItems.filter(item => item.position == right);
+      return state.allItems.filter(item => item.position == "right");
     },
   },
   mutations: {
