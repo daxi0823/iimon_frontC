@@ -1,41 +1,22 @@
 <template>
   <div class="mainWrapper">
-    <!-- input部分 -->
-    <div class="inputWrapper">
-      <input type="text" class="inputBox" v-model="newItem">
-      <input type="button" class="submitButton" @click="addItem" value="追加">
-    </div>
+    <rightItems/>
 
-    <!-- item部分 -->
-    <div class="itemWrapper" v-for="(item, index) in items" :key=index >
-      <div class="itemContainer">
-        <button class="buttonX" @click="deleteItem(index)">X</button>
-        <div class="items">
-          <span class="itemFont">{{item}}</span>
-        </div>
-      </div>
-    </div>
   </div>
 </template>
 
 <script>
+import rightItems from "../components/rightItems.vue"
 export default {  
   data(){
     return {
-      newItem: "",
-      items:["Apple", "Grape", "Strawberry"],
     }
   },
   methods: {
-    addItem() {
-      this.items.push(this.newItem);
-      this.newItem = "";
-      console.log(this.items)
-    },
-    deleteItem(index){
-      this.items.splice(index, 1);
-      console.log(this.items)
-    }
+
+  },
+  components: {
+    rightItems,
   }
 }
 </script>

@@ -1,22 +1,28 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import axios from 'axios'
 Vue.use(Vuex)
 
 
 export default new Vuex.Store({
   state: {
-    allSpots: [],
-    spotId: 0,
-    allPlans: [],
-    planId: 0,
-    // currentPlan: 0,
+    allItems: [
+      {name: "Apple", position:"left"},
+      {name: "Grape", position:"left"},
+      {name: "Strawberry", position:"left"},
+      {name: "Cherry", position:"left"},
+      {name: "Plum", position:"left"},
+      {name: "Watermelon", position:"right"},
+      {name: "Banana", position:"right"},
+      {name: "Peach", position:"right"},
+    ],
   },
   getters: {
-    allSpots: state => state.allSpots,
-    allPlans: state => state.allPlans,
-    // currentPlan: state => state.currentPlan,
-    // フィルターしたスポットはここ？
+    leftItems: function(state){
+      return state.allItems.filter(item => item.position == left);
+    },
+    rightItems: function(state){
+      return state.allItems.filter(item => item.position == right);
+    },
   },
   mutations: {
     // setSpots(state, datas) {
