@@ -6,7 +6,7 @@
       </li>
     </ul>
     <!-- ボタン -->
-    <input type="button" class="submitButton" @click="transferToRight" value="右へ移動">
+    <input type="button" class="submitButton" @click="leftButton" value="右へ移動">
     
   </div>
 </template>
