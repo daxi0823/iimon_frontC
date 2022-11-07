@@ -1,10 +1,8 @@
 <template>
-  <div>
-    <ul>
-      <li v-for="(item, index) in rightItems" :key="index">
-        {{item.name}}
-      </li>
-    </ul>
+  <div class="contentBox">
+    <div v-for="(item, index) in rightItems" :key="index">
+      {{item.name}}
+    </div>
   </div>
 </template>
 
@@ -26,4 +24,5 @@ export default {
 }
 </script>
 
-
+<style scoped>
+</style>

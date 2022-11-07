@@ -2,10 +2,13 @@
   <div class="mainWrapper">
     <div class="leftBox">
       <leftItems/>
+      <input type="button" class="submitButton" @click="transferToRight" value="右へ移動">
     </div>
     <div class="rightBox">
       <rightItems/>
+      <input type="text">
     </div>
+
 
   </div>
 </template>
@@ -20,7 +23,9 @@ export default {
     }
   },
   methods: {
-
+    transferToRight() {
+      console.log(leftItems.slice(-1)[0])
+    }
   },
   components: {
     leftItems,
