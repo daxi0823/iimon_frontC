@@ -3,7 +3,6 @@
     <div class="mainWrapper" v-for="(item, index) in leftItems" :key="index">
       <div class="item">{{item}}</div>
     </div>
-    <!-- ボタン -->
     <input type="button" class="submitButton" @click="leftButton" value="右へ移動">
   </div>
 </template>
