@@ -34,6 +34,8 @@ export default {
   width: 700px;
   margin: 100px auto;
   display: flex;
+  justify-content: space-between;
+
 }
 /* input部分 */
 .leftBox .rightBox{
@@ -42,7 +44,6 @@ export default {
   border: 1px solid navy;
 
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 .inputBox {
