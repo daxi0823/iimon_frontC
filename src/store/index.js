@@ -21,6 +21,10 @@ export default new Vuex.Store({
       const targetItem = state.leftItems.pop();
       state.rightItems.push(targetItem);
     },
+    rightButton: function(state) {
+      const targetItem = state.rightItems.pop();
+      state.leftItems.push(targetItem);
+    },
 
     // setSpots(state, datas) {
     //   state.allSpots = datas

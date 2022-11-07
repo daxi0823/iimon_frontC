@@ -2,12 +2,12 @@
   <div class="mainWrapper">
     <div class="leftWrapper">
       <div class="leftBox">
-        <leftItems/>
+        <leftBox/>
       </div>
     </div>
 
     <div class="rightBox">
-      <rightItems/>
+      <rightBox/>
     </div>
 
 
@@ -15,8 +15,8 @@
 </template>
 
 <script>
-import leftItems from "../components/leftItems.vue"
-import rightItems from "../components/rightItems.vue"
+import leftBox from "../components/leftIBox.vue"
+import rightBox from "../components/rightBox.vue"
 
 export default {  
   data(){
@@ -26,8 +26,8 @@ export default {
   methods: {
   },
   components: {
-    leftItems,
-    rightItems,
+    leftBox,
+    rightBox,
   }
 }
 </script>
