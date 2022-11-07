@@ -1,12 +1,16 @@
 <template>
   <div class="mainWrapper">
+    <leftItems/>
     <rightItems/>
+
 
   </div>
 </template>
 
 <script>
+import leftItems from "../components/leftItems.vue"
 import rightItems from "../components/rightItems.vue"
+
 export default {  
   data(){
     return {
@@ -16,6 +20,7 @@ export default {
 
   },
   components: {
+    leftItems,
     rightItems,
   }
 }
