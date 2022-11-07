@@ -1,7 +1,9 @@
 <template>
   <div>
     <ul>
-      <li>{{rightItems.name}}</li>
+      <li v-for="(item, index) in rightItems" :key="index">
+        {{item.name}}
+      </li>
     </ul>
   </div>
 </template>
