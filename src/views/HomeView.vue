@@ -38,27 +38,7 @@ export default {
   margin: 100px auto;
   display: flex;
   justify-content: space-between;
-
-}
-/* input部分 */
-.leftWrapper {
-  width: 300px;
-  height: 800px;
-}
-.leftBox, .rightBox{
-  width: 300px;
-  height: 700px;
-  box-sizing: border-box;
-  border: 1px solid navy;
-
-  align-items: center;
 }
 
-.submitButton {
-  box-sizing: border-box;
-  height: 30px;
-  padding: 3px;
-  background-color: navy;
-  color: white;
-}
+
 </style>
