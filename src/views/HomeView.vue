@@ -1,7 +1,11 @@
 <template>
   <div class="mainWrapper">
-    <leftItems/>
-    <rightItems/>
+    <div>
+      <leftItems/>
+    </div>
+    <div>
+      <rightItems/>
+    </div>
 
   </div>
 </template>
