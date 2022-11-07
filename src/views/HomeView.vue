@@ -8,7 +8,6 @@
 
     <div class="rightBox">
       <rightItems/>
-      <input type="text">
     </div>
 
 
@@ -27,8 +26,8 @@ export default {
   methods: {
   },
   components: {
-    leftItemList,
-    rightItemList,
+    leftItems,
+    rightItems,
   }
 }
 </script>
