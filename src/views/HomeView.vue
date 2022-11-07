@@ -1,9 +1,9 @@
 <template>
   <div class="mainWrapper">
-    <div>
+    <div class="leftBox">
       <leftItems/>
     </div>
-    <div>
+    <div class="rightBox">
       <rightItems/>
     </div>
 
@@ -31,22 +31,25 @@ export default {
 
 <style scoped>
 .mainWrapper {
-  width: 300px;
+  width: 700px;
   margin: 100px auto;
+  display: flex;
 }
 /* input部分 */
-.inputWrapper{
+.leftBox .rightBox{
+  box-sizing: border-box;
+  width: 300px;
+  border: 1px solid navy;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
 }
 .inputBox {
   box-sizing: border-box;
   height: 30px;
   border: 1px solid navy;
   margin-right: 10px;
-  width: 100%;
 }
 .submitButton {
   box-sizing: border-box;
