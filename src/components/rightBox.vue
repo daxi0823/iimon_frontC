@@ -2,7 +2,7 @@
   <div>
     <ul>
       <li v-for="(item, index) in rightItems" :key="index">
-        {{item}}
+        <div class="items">{{item}}</div>
       </li>
     </ul>
     <!-- ボタン -->
@@ -30,4 +30,8 @@ export default {
 }
 </script>
 
+<style scoped>
 
+
+
+</style>
