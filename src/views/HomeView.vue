@@ -1,9 +1,12 @@
 <template>
   <div class="mainWrapper">
-    <div class="leftBox">
-      <leftItems/>
+    <div class="leftWrapper">
+      <div class="leftBox">
+        <leftItems/>
+      </div>
       <input type="button" class="submitButton" @click="transferToRight" value="右へ移動">
     </div>
+
     <div class="rightBox">
       <rightItems/>
       <input type="text">
@@ -43,9 +46,14 @@ export default {
 
 }
 /* input部分 */
-.leftBox, .rightBox{
-  box-sizing: border-box;
+.leftWrapper {
   width: 300px;
+  height: 800px;
+}
+.leftBox, .rightBox{
+  width: 300px;
+  height: 700px;
+  box-sizing: border-box;
   border: 1px solid navy;
 
   align-items: center;
