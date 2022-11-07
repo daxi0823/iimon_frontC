@@ -19,7 +19,9 @@ export default {
     }
   },
   methods: {
-
+    leftButton() {
+      this.$store.commit('leftButton')
+    }
   },
   computed: {
     leftItemList() {
