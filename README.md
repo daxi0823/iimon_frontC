@@ -1,4 +1,4 @@
-# front B 課題
+# front C 課題
 
 ## Project setup
 ```
