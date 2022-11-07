@@ -27,7 +27,7 @@ export default {
   },
   methods: {
     transferToRight() {
-      console.log(leftItems.slice(-1)[0])
+      leftItems.slice(-1)[0]
     }
   },
   components: {
