@@ -1,7 +1,7 @@
 <template>
   <div>
     <ul>
-      <li v-for="(item, index) in leftItems" :key="index">
+      <li v-for="(item, index) in leftItemList" :key="index">
         {{item.name}}
       </li>
     </ul>
@@ -19,7 +19,7 @@ export default {
     }
   },
   methods: {
-    
+
   },
   computed: {
     leftItemList() {
