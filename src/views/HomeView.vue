@@ -3,7 +3,6 @@
     <leftItems/>
     <rightItems/>
 
-
   </div>
 </template>
 
