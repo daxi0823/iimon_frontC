@@ -1,7 +1,7 @@
 <template>
   <div>
     <ul>
-      <li>{{rightItems}}</li>
+      <li>{{rightItems.name}}</li>
     </ul>
   </div>
 </template>
