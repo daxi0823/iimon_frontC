@@ -1,7 +1,9 @@
 <template>
   <div>
-    <div class="mainWrapper" v-for="(item, index) in leftItems" :key="index">
-      <div class="item">{{item}}</div>
+    <div class="mainWrapper">
+      <div v-for="(item, index) in leftItems" :key="index">
+        <div class="item">{{item}}</div>
+      </div>
     </div>
     <input type="button" class="submitButton" @click="leftButton" value="右へ移動">
   </div>
