@@ -42,8 +42,10 @@ export default {
 .item{
   width: 80%;
   height: 50px;
+  text-align: center;
+  padding: auto;
   font-size: 16px;
-
+  border-bottom: 1px solid navy;
 }
 .submitButton {
   box-sizing: border-box;
