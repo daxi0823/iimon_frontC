@@ -16,11 +16,13 @@ export default {
     }
   },
   methods: {
+    // store/mutationをcommitし、配列の最後のアイテムを移動させる
     leftButton() {
       this.$store.commit('leftButton')
     }
   },
   computed: {
+    // store/stateから初期の配列を取得
     leftItems() {
       return this.$store.state.leftItems;
     },
