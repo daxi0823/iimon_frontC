@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="mainWrapper">
-      <div v-for="(item, index) in leftItems" :key="index">
+      <div class="itemContainer" v-for="(item, index) in leftItems" :key="index">
         <span class="itemBlock">{{item}}</span>
       </div>
     </div>
@@ -38,7 +38,9 @@ export default {
   box-sizing: border-box;
   border: 1px solid navy;
 }
-
+.itemContainer {
+  width: 80%;
+}
 .itemBlock {
   display: block;
   width: 80%;
