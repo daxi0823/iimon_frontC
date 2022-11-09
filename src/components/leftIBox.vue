@@ -43,7 +43,7 @@ export default {
 }
 .itemBlock {
   display: block;
-  width: 80%;
+  width: 100%;
   height: 50px;
   line-height: 50px;
   border-bottom: 1px solid navy;
