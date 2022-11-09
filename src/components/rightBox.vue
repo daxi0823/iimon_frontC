@@ -5,7 +5,7 @@
         <span class="itemBlock">{{item}}</span>
       </div>
     </div>
-    <input type="button" class="submitButton" @click="rightButton" value="右へ移動">
+    <input type="button" class="submitButton" @click="rightButton" value="左へ移動">
   </div>
 </template>
 

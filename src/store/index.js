@@ -12,12 +12,16 @@ export default new Vuex.Store({
   },
   mutations: {
     leftButton: function(state) {
-      const targetItem = state.leftItems.pop();
-      state.rightItems.push(targetItem);
+      if (state.leftItems.length > 0) {
+        const targetItem = state.leftItems.pop();
+        state.rightItems.push(targetItem);
+      }
     },
     rightButton: function(state) {
-      const targetItem = state.rightItems.pop();
-      state.leftItems.push(targetItem);
+      if (state.rightItems.length > 0) {
+        const targetItem = state.rightItems.pop();
+        state.leftItems.push(targetItem);
+      }
     },
   },
   actions: {
